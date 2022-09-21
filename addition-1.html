@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Input tutorial</title>
+        <script language="javascript">
+            function Add()
+            {
+                var val1 = parseInt(document.getElementById("value1").value);
+                var val2 = parseInt(document.getElementById("value2").value);
+                var ansD = document.getElementById("answer");
+                ansD.value = val1 + val2;
+            }
+            function Sub()
+            {
+                var val1 = parseInt(document.getElementById("value1").value);
+                var val2 = parseInt(document.getElementById("value2").value);
+                var ansD = document.getElementById("answer");
+                ansD.value = val1  - val2;
+            }
+            function mul()
+            {
+                var val1 = parseInt(document.getElementById("value1").value);
+                var val2 = parseInt(document.getElementById("value2").value);
+                var ansD = document.getElementById("answer");
+                ansD.value = val1*val2;
+            }
+            function div()
+            {
+                var val1 = parseInt(document.getElementById("value1").value); 
+                var val2 = parseInt(document.getElementById("value2").value); 
+                var ansD = document.getElementById("answer");
+                ansD.value = val1/val2;
+            }
+
+        </script>
+    </head>
+    <body>
+        value1 = <input type="text" id="value1" value="1"/><br>
+        value2 = <input type="text" id="value2" value="2"/><br>
+        <input type="button" name= "submit" Value ="ADD" onClick="Add()"/> <br>
+        <input type="button" name= "submit" Value ="SUB" onClick="Sub()"/> <br>
+        <input type="button" name= "submit" Value ="MUL" onClick="mul()"/> <br>
+        <input type="button" name= "submit" Value ="DIV" onClick="div()"/> <br>
+        Answer = <input type="text" id="answer" value=""/>            
+    </body>
+</html>
